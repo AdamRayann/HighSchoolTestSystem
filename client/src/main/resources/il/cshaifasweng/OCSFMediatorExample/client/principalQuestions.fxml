@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane prefHeight="576.0" prefWidth="778.0" style="-fx-background-color: #003000;" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="il.cshaifasweng.OCSFMediatorExample.client.Principal.PrincipalQuestions">
+    <children>
+        <TableView fx:id="table" layoutX="7.0" layoutY="35.0" onMouseClicked="#selectQuestion" prefHeight="394.0" prefWidth="762.0">
+            <columns>
+            <TableColumn fx:id="TheQuestion" prefWidth="407.19999980926514" text="The Question" />
+                <TableColumn fx:id="QuestionId" prefWidth="72.0" text="Question ID" />
+            <TableColumn fx:id="QuestionTeacherName" prefWidth="125.60003662109375" text="Teacher Name" />
+                <TableColumn fx:id="QuestionTeacherID" prefWidth="70.4000244140625" text="Teacher ID" />
+                <TableColumn fx:id="SubjectName" prefWidth="81.5999755859375" text="Subject" />
+            </columns>
+        </TableView>
+        <Text fill="WHITE" layoutX="14.0" layoutY="27.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Questions">
+            <font>
+                <Font size="18.0" />
+            </font>
+        </Text>
+        <Button fx:id="BackToMenuBtn" layoutX="14.0" layoutY="527.0" mnemonicParsing="false" onAction="#BackToMenu" prefHeight="40.0" prefWidth="258.0" style="-fx-background-color: #0A8A0A;" text="Back To Menu" textFill="WHITE">
+            <font>
+                <Font size="18.0" />
+            </font>
+        </Button>
+        <Button fx:id="ShowQuestionBtn" layoutX="506.0" layoutY="527.0" mnemonicParsing="false" onAction="#ShowQuestion" prefHeight="40.0" prefWidth="262.0" style="-fx-background-color: #0A8A0A;" text="Show Question" textFill="WHITE">
+            <font>
+                <Font size="18.0" />
+            </font>
+        </Button>
+      <Text fill="WHITE" layoutX="14.0" layoutY="456.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Selected Question">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Text>
+      <TableView fx:id="_QuestionToShowTabel" layoutX="7.0" layoutY="461.0" prefHeight="62.0" prefWidth="762.0">
+        <columns>
+          <TableColumn fx:id="_TheQuestion" prefWidth="403.19999980926514" text="The Question" />
+          <TableColumn fx:id="_TheQuestionId" prefWidth="72.0" text="Question ID" />
+            <TableColumn fx:id="_TheQuestionTeacherName" prefWidth="132.0" text="Teacher Name" />
+            <TableColumn fx:id="_TheQuestionTeacherID" minWidth="0.0" prefWidth="83.20001220703125" text="Teacher ID" />
+            <TableColumn fx:id="_TheQuestipnSubjectName" prefWidth="65.5999755859375" text="Subject" />
+        </columns>
+      </TableView>
+      <Text fx:id="ErrTxt" fill="RED" layoutX="297.0" layoutY="553.0" strokeType="OUTSIDE" strokeWidth="0.0">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Text>
+    </children>
+</AnchorPane>

@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane prefHeight="576.0" prefWidth="778.0" style="-fx-background-color: #003000;" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="il.cshaifasweng.OCSFMediatorExample.client.Principal.PrincipalGrades">
+    <children>
+        <Text fill="WHITE" layoutX="14.0" layoutY="27.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Student Grades">
+            <font>
+                <Font size="18.0" />
+            </font>
+        </Text>
+        <TableView fx:id="gradeTable" layoutX="9.0" layoutY="41.0" onMouseClicked="#selectgrade" prefHeight="441.0" prefWidth="759.0">
+            <columns>
+                <TableColumn fx:id="StudentName" prefWidth="172.00000286102295" text="Student" />
+            <TableColumn fx:id="StudentId" prefWidth="93.59996032714844" text="Student ID" />
+                <TableColumn fx:id="ExamId" prefWidth="99.20001220703125" text="Exam ID" />
+            <TableColumn fx:id="SubjectName" prefWidth="94.39996337890625" text="Subject" />
+            <TableColumn fx:id="SubjectId" prefWidth="65.5999755859375" text="Subject ID" />
+            <TableColumn fx:id="CourseName" prefWidth="99.20001220703125" text="Course" />
+            <TableColumn fx:id="CourseId" prefWidth="62.39990234375" text="Course ID" />
+                <TableColumn fx:id="TheGrade" prefWidth="72.800048828125" text="Grade" />
+            </columns>
+        </TableView>
+        <Button fx:id="BackToMenuBtn" layoutX="14.0" layoutY="530.0" mnemonicParsing="false" onAction="#BackToMenu" prefHeight="40.0" prefWidth="258.0" style="-fx-background-color: #0A8A0A;" text="Back To Menu" textFill="WHITE">
+            <font>
+                <Font size="18.0" />
+            </font>
+        </Button>
+        <Button fx:id="CpyBtn" layoutX="510.0" layoutY="530.0" mnemonicParsing="false" onAction="#ShowCopy" prefHeight="40.0" prefWidth="258.0" style="-fx-background-color: #0A8A0A;" text="Show Copy" textFill="WHITE">
+            <font>
+                <Font size="18.0" />
+            </font>
+        </Button>
+      <Text fx:id="NoCopyText" fill="RED" layoutX="125.0" layoutY="513.0" strokeType="OUTSIDE" strokeWidth="0.0" textAlignment="CENTER" wrappingWidth="527.7366943359375">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Text>
+    </children>
+</AnchorPane>
